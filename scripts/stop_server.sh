@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -euxo pipefail
 
-echo "Stopping httpd if running..."
-systemctl stop httpd || true
+echo "Stopping nginx if running..."
+systemctl stop nginx || true
